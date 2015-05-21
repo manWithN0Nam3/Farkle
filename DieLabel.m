@@ -8,22 +8,36 @@
 
 #import "DieLabel.h"
 
+@interface DieLabel ()
+
+//@property UITapGestureRecognizer *tapGestureRecognizer;
+
+@end
+
 @implementation DieLabel
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
 
     self = [super initWithCoder:aDecoder];
 
-    // add code here
+//    self.labelTap = [[UITapGestureREcogn]]
+
+//    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dieLabelTapped)];
+//
+
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dieLabelTapped)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [labelOne addGestureRecognizer:tapGestureRecognizer];
+    myLabel.userInteractionEnabled = YES;
 
     return self;
 
-}
 
+    
+}
 
 -(void)dieLabelTapped{
     NSLog(@"hello");
-
 
 }
 

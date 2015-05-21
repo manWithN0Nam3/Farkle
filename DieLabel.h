@@ -11,10 +11,15 @@
 @protocol DieLabelDelegate <NSObject>
 -(void)dieLabel:(id)dieLabel onLabelTapped:(UILabel*)label;
 
+
 @end
 
 
 @interface DieLabel : UILabel
+
+
+-(void)dieLabelTapped;
+
 
 
 @property (nonatomic, assign)id<DieLabelDelegate> delegate;
