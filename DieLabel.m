@@ -37,9 +37,20 @@
 }
 
 -(void)dieLabelTapped{
-    NSLog(@"hello");
+
 
     
+    NSLog(@"hello");
+}
+
+
+
+-(void)roll{
+
+ int random = (arc4random() % 6) + 1;
+
+    self.text = [NSString stringWithFormat:@"%i",random];
+
 
 }
 

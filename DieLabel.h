@@ -20,8 +20,9 @@
 
 -(void)dieLabelTapped;
 
-
-
 @property (nonatomic, assign)id<DieLabelDelegate> delegate;
+
+
+-(void)roll;
 
 @end

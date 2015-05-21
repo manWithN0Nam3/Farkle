@@ -11,11 +11,20 @@
 
 
 
-@interface GameViewController ()
+@interface GameViewController ()<DieLabelDelegate>
 
 
+@property (weak, nonatomic) IBOutlet DieLabel *label1;
+@property (weak, nonatomic) IBOutlet DieLabel *label2;
+@property (weak, nonatomic) IBOutlet DieLabel *label3;
+@property (weak, nonatomic) IBOutlet DieLabel *label4;
+@property (weak, nonatomic) IBOutlet DieLabel *label5;
+@property (weak, nonatomic) IBOutlet DieLabel *label6;
+@property DieLabel *dieLabel;
 
+@property NSMutableArray *arrays;
 @property UITapGestureRecognizer *labelTap;
+@property NSMutableArray *dice;
 
 
 @end
@@ -25,6 +34,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.dieLabel.delegate = self;
+
+    self.arrays = [[NSMutableArray alloc]initWithObjects:self.label1,self.label2,self.label3,self.label4, self.label5, self.label6, nil];
+
 //    self.labelOne [one addgesturerecognizer: self.gesture]
 //
 //
@@ -33,6 +46,20 @@
 
 }
 
+- (IBAction)onRollButtonTapped:(id)sender {
+
+    for (DieLabel *dieLabel in self.arrays) {
+        [dieLabel roll];
+    }
+
+}
+
+
+-(void)dieLabel:(id)dieLabel onLabelTapped:(UILabel *)label{
+
+
+
+}
 
 
 
