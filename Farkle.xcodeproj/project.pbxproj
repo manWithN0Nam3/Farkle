@@ -14,6 +14,8 @@
 		9714CEA01B0E4D86000BE1F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9714CE9F1B0E4D86000BE1F4 /* Images.xcassets */; };
 		9714CEA31B0E4D86000BE1F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9714CEA11B0E4D86000BE1F4 /* LaunchScreen.xib */; };
 		9714CEAF1B0E4D86000BE1F4 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9714CEAE1B0E4D86000BE1F4 /* FarkleTests.m */; };
+		9714CEBD1B0E4EB0000BE1F4 /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9714CEBC1B0E4EB0000BE1F4 /* SubClass.m */; };
+		9714CEC01B0E61DE000BE1F4 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9714CEBF1B0E61DE000BE1F4 /* DieLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9714CEA81B0E4D86000BE1F4 /* FarkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9714CEAD1B0E4D86000BE1F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9714CEAE1B0E4D86000BE1F4 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		9714CEBB1B0E4EB0000BE1F4 /* SubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		9714CEBC1B0E4EB0000BE1F4 /* SubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
+		9714CEBE1B0E61DE000BE1F4 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		9714CEBF1B0E61DE000BE1F4 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,14 @@
 		9714CE911B0E4D86000BE1F4 /* Farkle */ = {
 			isa = PBXGroup;
 			children = (
+				9714CEBB1B0E4EB0000BE1F4 /* SubClass.h */,
+				9714CEBC1B0E4EB0000BE1F4 /* SubClass.m */,
 				9714CE961B0E4D86000BE1F4 /* AppDelegate.h */,
 				9714CE971B0E4D86000BE1F4 /* AppDelegate.m */,
 				9714CE991B0E4D86000BE1F4 /* ViewController.h */,
 				9714CE9A1B0E4D86000BE1F4 /* ViewController.m */,
+				9714CEBE1B0E61DE000BE1F4 /* DieLabel.h */,
+				9714CEBF1B0E61DE000BE1F4 /* DieLabel.m */,
 				9714CE9C1B0E4D86000BE1F4 /* Main.storyboard */,
 				9714CE9F1B0E4D86000BE1F4 /* Images.xcassets */,
 				9714CEA11B0E4D86000BE1F4 /* LaunchScreen.xib */,
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9714CE9B1B0E4D86000BE1F4 /* ViewController.m in Sources */,
+				9714CEC01B0E61DE000BE1F4 /* DieLabel.m in Sources */,
+				9714CEBD1B0E4EB0000BE1F4 /* SubClass.m in Sources */,
 				9714CE981B0E4D86000BE1F4 /* AppDelegate.m in Sources */,
 				9714CE951B0E4D86000BE1F4 /* main.m in Sources */,
 			);
