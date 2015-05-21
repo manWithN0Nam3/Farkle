@@ -57,9 +57,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gQ2-lS-vvw"/>
-                    <connections>
-                        <outlet property="labelOne" destination="1pY-J7-142" id="B7S-ee-Gsj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbF-jT-bSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

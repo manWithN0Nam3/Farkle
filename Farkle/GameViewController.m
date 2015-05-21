@@ -17,8 +17,6 @@
 
 @property UITapGestureRecognizer *labelTap;
 
-@property (weak, nonatomic) IBOutlet DieLabel *labelOne;
-
 
 @end
 

@@ -10,6 +10,8 @@
 
 @interface DieLabel ()
 
+
+
 //@property UITapGestureRecognizer *tapGestureRecognizer;
 
 @end
@@ -24,11 +26,9 @@
 
 //    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dieLabelTapped)];
 //
-
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dieLabelTapped)];
-    tapGestureRecognizer.numberOfTapsRequired = 1;
-    [labelOne addGestureRecognizer:tapGestureRecognizer];
-    myLabel.userInteractionEnabled = YES;
+//    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [self addGestureRecognizer:tapGestureRecognizer];
 
     return self;
 
@@ -38,6 +38,8 @@
 
 -(void)dieLabelTapped{
     NSLog(@"hello");
+
+    
 
 }
 
